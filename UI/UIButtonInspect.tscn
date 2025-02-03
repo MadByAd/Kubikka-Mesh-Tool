@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Font/Mono.tres" type="DynamicFont" id=1]
+[ext_resource path="res://UI/UIButtonInspect.gd" type="Script" id=2]
+
+[node name="UIButtonInspect" type="Button"]
+margin_right = 164.0
+margin_bottom = 48.0
+rect_min_size = Vector2( 0, 48 )
+focus_mode = 0
+size_flags_horizontal = 3
+custom_fonts/font = ExtResource( 1 )
+enabled_focus_mode = 0
+text = "MeshCube (X+)"
+align = 0
+script = ExtResource( 2 )

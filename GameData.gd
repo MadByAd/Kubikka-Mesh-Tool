@@ -1,0 +1,35 @@
+extends Node
+
+
+enum ORIENTATION {
+	UP,
+	DOWN,
+}
+enum DIRECTION {
+	LEFT,	# -X
+	RIGHT,	# +X
+	FRONT,	# +Z
+	BACK,	# -Z
+}
+enum AXIS {
+	X_NEGATIVE,
+	X_POSITIVE,
+	Y_NEGATIVE,
+	Y_POSITIVE,
+	Z_NEGATIVE,
+	Z_POSITIVE,
+}
+enum FACE {
+	TOP,	# +Y
+	BOTTOM,	# -Y
+	LEFT,	# -X
+	RIGHT,	# +X
+	FRONT,	# +Z
+	BACK	# -Z
+}
+
+
+const ATLAS_BLOCK_PIXEL_SIZE: float = 16.0
+const ATLAS_BLOCK_TEXTURE_SIZE: int = 4096
+const ATLAS_BLOCK_UV_OFFSET: float = ATLAS_BLOCK_PIXEL_SIZE / ATLAS_BLOCK_TEXTURE_SIZE
+
